@@ -8,6 +8,7 @@ class bmi {
       double superweight;
       double bmi;
     public:
+
     void count() {
         superweight = pow(weight, 2);
         bmi = superweight / height;
@@ -18,7 +19,8 @@ class bmi {
         std::cout << "Enter height: "; std::cin >> height;
         std::cout << "Enter weight: "; std::cin >> weight;
     };
-    void chech() {
+
+    void check() {
         if (bmi < 18) {std::cout << "You underweight! Here is your ice cream!";}
         else if (bmi == 19) {std::cout << "You normal! Congratulations!";}
         else if (bmi == 24) {std::cout << "You bubby! Go to the GUM!";}
@@ -28,6 +30,7 @@ class bmi {
         else if (bmi > 40) {std::cout << "You fucking overweight! You`re so fat, so... fuck you!!!";}
         std::cout << std::endl;
     };
+
     void showi() {
         std::cout << "Your BMI is " << bmi << std::endl;
     };
