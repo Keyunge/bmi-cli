@@ -23,13 +23,13 @@ class bmi {
     };
     // Adding funny messages
     void check() {
-        if (bmi < 18) {std::cout << "You underweight! Here is your ice cream!";}
-        else if (bmi == 19) {std::cout << "You normal! Congratulations!";}
-        else if (bmi == 24) {std::cout << "You bubby! Go to the GUM!";}
-        else if (bmi == 40) {std::cout << "You fucking overweight! You`re so fat, so... fuck you!!!";}
-        else if (bmi > 19 && bmi < 23) {std::cout << "You normal! Congratulations!";}
-        else if (bmi > 24 && bmi < 39) {std::cout << "You bubby! Go to the GUM!";}
-        else if (bmi > 40) {std::cout << "You fucking overweight! You`re so fat, so... fuck you!!!";}
+        if (bmi < 18) {std::cout << "\033[36m" << "You underweight! Here is your ice cream!";}
+        else if (bmi == 19) {std::cout << "\033[32m" << "You normal! Congratulations!";}
+        else if (bmi == 24) {std::cout << "\033[33m" << "You bubby! Go to the GUM!";}
+        else if (bmi == 40) {std::cout << "\033[31m" <<"You fucking overweight! You`re so fat, so... fuck you!!!";}
+        else if (bmi > 19 && bmi < 23) {std::cout << "\033[32m" << "You normal! Congratulations!";}
+        else if (bmi > 24 && bmi < 39) {std::cout << "\033[33m" << "You bubby! Go to the GUM!";}
+        else if (bmi > 40) {std::cout << "\033[31m" << "You fucking overweight! You`re so fat, so... fuck you!!!";}
         std::cout << std::endl;
     };
     // Show BMI
