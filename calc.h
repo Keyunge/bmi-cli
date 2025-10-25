@@ -16,10 +16,10 @@ class bmi {
         superweight = pow(weight, 2);
         bmi = superweight / height;
     };
-    // Welcome message
+    // Checking BMI
     void enjoy() {
-        std::cout << "Enter height: "; std::cin >> height;
-        std::cout << "Enter weight: "; std::cin >> weight;
+        std::cout << "Enter height: " << "\033[32m"; std::cin >> height;
+        std::cout << "\033[1m\033[34m" << "Enter weight: " << "\033[32m"; std::cin >> weight;
     };
     // Adding funny messages
     void check() {
@@ -34,13 +34,20 @@ class bmi {
     };
     // Show BMI
     void showi() {
-        std::cout << "Your BMI is " << bmi << std::endl;
+        if (bmi < 18) {std::cout << "\033[1m\033[36m" << "Your bmi is " << bmi;}
+        else if (bmi == 19) {std::cout << "\033[1m\033[32m" << "Your bmi is " << bmi;}
+        else if (bmi == 24) {std::cout << "\033[1m\033[33m" << "Your bmi is " << bmi;}
+        else if (bmi == 40) {std::cout << "\033[1m\033[31m" << "Your bmi is " << bmi;}
+        else if (bmi > 19 && bmi < 23) {std::cout << "\033[1m\033[32m" << "Your bmi is " << bmi;}
+        else if (bmi > 24 && bmi < 39) {std::cout << "\033[1m\033[33m" << "Your bmi is " << bmi;}
+        else if (bmi > 40) {std::cout << "\033[1m\033[31m" << "Your bmi is " << bmi;}
+        std::cout << std::endl;
     };
     // Wellcome message
     void hello() {
-        std::cout << "  ╱╲  ╱╲___│ │ │ ___    ╱__   ╲ │__ (_)___  (_)___    ╱ __╲ ╱ ╱   ╲_   ╲      ╱ __╲  ╱╲╱╲    ╲_   ╲   ___ __ _│ │ ___ _   _│ │ __ _│ │_ ___  _ __ ╱ ╲" << std::endl;
-        std::cout << " ╱ ╱_╱ ╱ _ ╲ │ │╱ _ ╲     ╱ ╱╲╱ '_ ╲│ ╱ __│ │ ╱ __│  ╱ ╱   ╱ ╱     ╱ ╱╲╱____ ╱__╲╱╱ ╱    ╲    ╱ ╱╲╱  ╱ __╱ _` │ │╱ __│ │ │ │ │╱ _` │ __╱ _ ╲│ '__╱  ╱" << std::endl;
-        std::cout << "╱ __  ╱  __╱ │ │ (_) │   ╱ ╱  │ │ │ │ ╲__ ╲ │ ╲__ ╲ ╱ ╱___╱ ╱___╱╲╱ ╱_│_____╱ ╲╱  ╲╱ ╱╲╱╲ ╲╱╲╱ ╱_   │ (_│ (_│ │ │ (__│ │_│ │ │ (_│ │ ││ (_) │ │ ╱╲_╱ " << std::endl;
-        std::cout << "╲╱ ╱_╱ ╲___│_│_│╲___( )  ╲╱   │_│ │_│_│___╱ │_│___╱ ╲____╱╲____╱╲____╱      ╲_____╱╲╱    ╲╱╲____╱    ╲___╲__,_│_│╲___│╲__,_│_│╲__,_│╲__╲___╱│_│ ╲╱   " << std::endl;
+        std::cout << "\033[1m\033[34m" << "  ╱╲  ╱╲___│ │ │ ___    ╱__   ╲ │__ (_)___  (_)___    ╱ __╲ ╱ ╱   ╲_   ╲      ╱ __╲  ╱╲╱╲    ╲_   ╲   ___ __ _│ │ ___ _   _│ │ __ _│ │_ ___  _ __ ╱ ╲" << std::endl;
+        std::cout << "\033[1m\033[34m" << " ╱ ╱_╱ ╱ _ ╲ │ │╱ _ ╲     ╱ ╱╲╱ '_ ╲│ ╱ __│ │ ╱ __│  ╱ ╱   ╱ ╱     ╱ ╱╲╱____ ╱__╲╱╱ ╱    ╲    ╱ ╱╲╱  ╱ __╱ _` │ │╱ __│ │ │ │ │╱ _` │ __╱ _ ╲│ '__╱  ╱" << std::endl;
+        std::cout << "\033[1m\033[34m" << "╱ __  ╱  __╱ │ │ (_) │   ╱ ╱  │ │ │ │ ╲__ ╲ │ ╲__ ╲ ╱ ╱___╱ ╱___╱╲╱ ╱_│_____╱ ╲╱  ╲╱ ╱╲╱╲ ╲╱╲╱ ╱_   │ (_│ (_│ │ │ (__│ │_│ │ │ (_│ │ ││ (_) │ │ ╱╲_╱ " << std::endl;
+        std::cout << "\033[1m\033[34m" << "╲╱ ╱_╱ ╲___│_│_│╲___( )  ╲╱   │_│ │_│_│___╱ │_│___╱ ╲____╱╲____╱╲____╱      ╲_____╱╲╱    ╲╱╲____╱    ╲___╲__,_│_│╲___│╲__,_│_│╲__,_│╲__╲___╱│_│ ╲╱   " << std::endl;
     };
 };
