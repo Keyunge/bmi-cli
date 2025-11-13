@@ -9,9 +9,9 @@ else
     echo "Compiling"
     clang++ -o bmi main.cpp
     sudo mv bmi-cli /bin/
-    if ! command -v bmi-cli >/dev/null 2>&1
+    if ! command -v bmi >/dev/null 2>&1
     then
-        echo "Error: bmi-cli is not installed"
+        echo "Error: bmi is not installed"
         exit 1
     else
         echo "Installation complete! Success"
@@ -27,7 +27,7 @@ else
     echo "Compiling"
     g++ -o bmi main.cpp
     sudo mv bmi /bin/
-    if ! command -v bmi-cli >/dev/null 2>&1
+    if ! command -v bmi >/dev/null 2>&1
     then
         echo "Error: bmi-cli is not installed"
         exit 1
