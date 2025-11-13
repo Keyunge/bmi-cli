@@ -30,16 +30,15 @@
   ```
 ### 4. Run the program
   ``` bash
-  bmi-cli
+  bmi
   ```
 ## Usage
-  1. Type ```bmi-cli``` in your terminal
+  1. Type ```bmi``` in your terminal
   2. Enter your height and weight
   3. Check your bmi
   4. See the funny message :)
 ## About this project and me
 ### About this project
-![Screenshot](https://github.com/keyunge/bmi-cli/img/img.png)
 This project is a command-line tool that calculates the Body Mass Index (BMI) of a person based on their height and weight. It is written in C++ and uses the Clang compiler.
 
 
